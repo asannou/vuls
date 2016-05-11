@@ -12,4 +12,4 @@ Since it's not on docker hub because blablabla, you have to :
 
 # Run
 
-* ```docker run -it --rm -v /path/to/config.toml:/app/config.toml -v /path/to/id_rsa:/app/id_rsa asannou/vuls```
+* ```docker-compose run --rm vuls```
