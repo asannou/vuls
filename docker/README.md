@@ -5,3 +5,11 @@ Since it's not on docker hub because blablabla, you have to :
 * generate a keypair dedicated to this docker : ```ssh-keygen -t rsa -b 4096 -C "your_email@example.com"```
   * it's **highly** recommanded to use a restrained `authorized_keys` files with this key to be sure that it will be only usable from a single IP (after all it's a root executed software) : ```from="1.2.3.4,1.2.3.5" ssh-rsa [...] your_email@example.com```
 * Deploy your ssh key on the targetted machines
+
+# Build
+
+* ```make```
+
+# Run
+
+* ```docker run -it --rm -v /path/to/config.toml:/app/config.toml -v /path/to/id_rsa:/app/id_rsa asannou/vuls```
