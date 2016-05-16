@@ -41,5 +41,5 @@ No unsecure packages.
 
 ## Docker Compose
 
-* Edit docker-compose.yml
+* Edit [docker-compose.yml](https://github.com/asannou/vuls/blob/master/docker/docker-compose.yml)
 * ```docker-compose run --rm vuls```
